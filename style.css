@@ -6,21 +6,25 @@
 
 body {
     min-height: 100vh;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
     background-color: #fdfdfd;
     color: #333;
     line-height: 1.6;
 }
 
 
-
+/*head*/
 header {
+    margin-top: 0px;
     background-color: #7272f8;
     color: #000000;
     padding: 15px 0;
     position: relative;
     z-index: 1000;
     align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
 }
 
 .banner {
@@ -28,6 +32,7 @@ header {
     background-image: url(images/blueblue.jpg);
 }
 
+/*tng words sa land*/
 .container {
     width: 100%;
     max-width: 1100px;
@@ -46,20 +51,6 @@ header {
     text-decoration: none;
 }
 
-#menu-toggle {
-    display: none;
-}
-
-.hamburger {
-    display: none;
-    font-size: 2rem;
-    cursor: pointer;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    z-index: 1001;
-}
-
 nav {
     float: right;
 }
@@ -70,7 +61,7 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 nav ul li a {
@@ -128,6 +119,7 @@ header::after {
 
 }
 
+/*tong naay bnt*/
 .hero {
     text-align: left;
     padding: 100px 20px;
@@ -200,71 +192,108 @@ footer {
     padding: 20px 10px;
 }
 
-@media (max-width: 768px) {
-    .hamburger {
-        display: block;
-        justify-content: center;
+/*about ni*/
+.about-section {
+    margin: 10px 30px 10px 30px;
+}
+
+.container3 {
+    margin: 10px 30px 10px 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30px;
+
+    h2 {
+        text-align: center;
+        font-size: 30px;
+        padding: 5px;
+        background-color: #e1eaff;
+        border-radius: 20px;
+        color: #e93d93;
+
     }
 
-    nav ul {
-        width: 100%;
-        display: none;
-        flex-direction: column;
-        background-color: #4f6d7a;
-        position: absolute;
-        top: 95px;
-        right: 0px;
-        padding: 1rem;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    p {
+        padding: 10px 20px 20px 10px;
+        text-indent: .5in;
+        text-align: justify;
+        margin: 10px;
+        font-size: 20px;
+        border-radius: 10px;
     }
 
-    nav ul li a {
-        color: #fff;
+    ul {
+        border-radius: 10px;
+        margin-top: 10px;
+        padding: 30px;
+        list-style-type: none;
+        font-size: 20px;
+        text-align: justify;
     }
 
-    nav ul li a:hover {
-        background-color: #ddd;
-    }
-
-    #menu-toggle:checked+.hamburger+nav ul {
+    .socials {
+        margin: 10px;
         display: flex;
+        flex-direction: row;
+        gap: 6px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: #000000;
+            text-align: center;
+        }
+
+        img {
+            justify-content: center;
+            align-items: center;
+            width: 70px;
+        }
+
     }
 
-    header::after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+    .email {
+        text-align: center;
+        padding-left: 10px;
 
-    .dropdown .dropdown-content {
-        position: relative;
-        top: auto;
-        left: auto;
-        box-shadow: none;
-        border-radius: 0;
-        padding: 0;
-        background-color: transparent;
-        display: none;
-    }
+        h4 {
+            box-shadow: 0 0 5px;
+            text-align: center;
+            font-size: 16px;
+            margin: 10px;
+            border-radius: 10px;
 
-    .dropdown.open .dropdown-content {
-        display: block;
-        background-color: #4f6d7a;
+            b {
+                font-size: 20px;
+            }
+        }
     }
+}
 
-    .dropdown-content a {
-        display: none;
-        padding: 10px;
-        color: #fff;
-        background-color: #4f6d7a;
-        border-top: 1px solid #ddd;
-    }
 
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
 
-    .dropdown:hover .dropdown {
-        background-color: #fdfdfd;
-    }
+.by {
+    list-style-type: disc;
+
+}
+
+.our {
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    box-shadow: 0 0 10px;
+    border-radius: 20px;
+}
+
+
+.IS {
+    background: #182848;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
 }
