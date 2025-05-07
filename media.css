@@ -251,6 +251,9 @@
         padding: 10px;
         font-size: 15px;
     }
+    .subs{
+       text-align: center;
+    }
 }
 
 @media (max-width: 768px) {
