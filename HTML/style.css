@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+    background-color: #fdfdfd;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/*head*/
+header {
+    margin-top: 0px;
+    background-color: #7272f8;
+    color: #000000;
+    padding: 15px 0;
+    position: relative;
+    z-index: 1000;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.banner {
+    background-position: 100%;
+    background-image: url(images/blueblue.jpg);
+}
+
+/*tng words sa land*/
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.logo a {
+    color: #000000;
+    font-size: 1.8em;
+    font-weight: bold;
+    float: left;
+    text-decoration: none;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+nav ul li a {
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: none;
+    position: absolute;
+    background-color: #4f6d7a;
+    min-width: 160px;
+    text-align: center;
+    padding-right: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0px 0px 10px #bdbdbd;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-content a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropdown {
+    background-color: #fdfdfd;
+}
+
+.dropdown-content li a:hover {
+    background-color: #fbc687;
+
+}
+
+/*tong naay bnt*/
+.hero {
+    text-align: left;
+    padding: 100px 20px;
+    padding-bottom: 150px;
+    color: #ffffff;
+}
+
+.hero h1 {
+    text-align: left;
+    font-size: 3em;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.hero p {
+    text-align: left;
+    color: #000000;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #4f6d7a;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    position: absolute;
+    left: 10%;
+}
+
+.hero .btn:focus {
+    outline: 2px dashed #333;
+    outline-offset: 4px;
+}
+
+.hero .btn:hover {
+    box-shadow: 0px 0px 20px #a11b1b;
+    background-color: #abb9be;
+    color: wheat;
+    transform: translateY(-5px);
+
+}
+
+.intro {
+    margin-top: 0;
+    padding: 60px 20px;
+    background-color: #f4f7fa;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+/*about ni*/
+.about-section {
+    margin: 10px 30px 10px 30px;
+}
+
+.container3 {
+    margin: 10px 30px 10px 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30px;
+
+    h2 {
+        text-align: center;
+        font-size: 30px;
+        padding: 5px;
+        background-color: #e1eaff;
+        border-radius: 20px;
+        color: #e93d93;
+
+    }
+
+    p {
+        padding: 10px 20px 20px 10px;
+        text-indent: .5in;
+        text-align: justify;
+        margin: 10px;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+
+    ul {
+        border-radius: 10px;
+        margin-top: 10px;
+        padding: 30px;
+        list-style-type: none;
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    .socials {
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: #000000;
+            text-align: center;
+        }
+
+        img {
+            justify-content: center;
+            align-items: center;
+            width: 70px;
+        }
+
+    }
+
+    .email {
+        text-align: center;
+        padding-left: 10px;
+
+        h4 {
+            box-shadow: 0 0 5px;
+            text-align: center;
+            font-size: 16px;
+            margin: 10px;
+            border-radius: 10px;
+
+            b {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+
+
+.by {
+    list-style-type: disc;
+
+}
+
+.our {
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    box-shadow: 0 0 10px;
+    border-radius: 20px;
+}
+
+
+.IS {
+    background: #182848;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
