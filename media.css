@@ -1,79 +1,40 @@
 /*index*/
-@media (max-width: 992px) {
-    .container3 {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .container3 .our {
-        width: 100%;
-        margin: 10px 0;
+@media (max-width:1024px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
 @media (max-width:768px) {
-    header {
-        justify-content: center;
-    }
 
-    .banner {
-        background-position: 100%;
-        background-image: url(images/blueblue.jpg);
-        background-color: #eeecec8f;
-    }
-
-    .hero h1 {
-        text-align: center;
-        font-size: 3em;
-        margin-bottom: 15px;
-        color: #000000;
-        -webkit-text-stroke: 1px #ffffff;
-        background-color: #bdbdbd60;
-        border-radius: 10px;
-    }
-
-    .hero p {
-        text-align: center;
-        color: #000000;
-        font-size: 1.2em;
-        margin-bottom: 30px;
-        background-color: #ffffff86;
-        border-radius: 10px;
-        font-weight: 20px;
-    }
 
     .container {
-        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        a {
+            font-size: 20px;
+        }
     }
 
-    .logo {
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-    nav {
-        padding-right: 20px;
-        float: center;
+    .link a {
+        color: #000000;
+        font-size: 15px;
+        font-weight: bold;
+        float: left;
+        text-decoration: none;
     }
 
     nav ul {
-        text-align: center;
+        list-style: none;
+        display: flex;
+        gap: 15px;
+        justify-content: center;
     }
 
-    nav ul li a {
-        color: #fff;
-    }
-
-    nav ul li a:hover {
-        background-color: #ddd;
-    }
-
-}
-
-/*home*/
-@media (max-width: 768px) {
-
+    /*home*/
 
 
     .side {
@@ -102,6 +63,10 @@
 
     }
 
+    .containera {
+        justify-content: center;
+    }
+
     /*naa pud ni sa features*/
     /*topstudytips*/
 
@@ -117,6 +82,8 @@
     .tip-card {
         flex-wrap: wrap;
         flex-direction: column;
+
+
     }
 
     .testimonials {
@@ -147,25 +114,65 @@
     .arti-card {
         flex-wrap: wrap;
         flex-direction: column;
+
+        button {
+            margin-top: 15px;
+            border: none;
+            box-shadow: 0 0 5px;
+            background-color: #4f6d7a;
+            color: #fff;
+            padding: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        button a {
+            font-size: small;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
     }
 
     .Quote-tips {
         flex-wrap: wrap;
         flex-direction: column;
+        justify-content: center;
+
     }
 
     .quote-grid {
         flex-wrap: wrap;
         flex-direction: column;
+        justify-content: center;
     }
 
     .quote-card {
         flex-wrap: wrap;
         flex-direction: column;
+        justify-content: center;
 
         img {
-            width: 80%;
+            width: 100%;
             height: 60%;
+        }
+
+        a {
+            margin-top: 15px;
+            border: none;
+            box-shadow: 0 0 5px;
+            background-color: #4f6d7a;
+            color: #fff;
+            padding: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        a .download {
+            font-size: smaller;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
         }
     }
 
@@ -199,12 +206,10 @@
         flex-wrap: wrap;
         flex-direction: column;
     }
-}
 
 
+    /*sa about, pomo,mind,acti,studytips*/
 
-/*sa about, pomo,mind,acti,studytips*/
-@media (max-width: 768px) {
     .about img {
         width: 100%;
     }
@@ -213,55 +218,138 @@
         margin: 10px 10px 10px 10px;
     }
 
+
     .container3 {
         margin: 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    h2 {
-        font-size: 20px;
-
-    }
-}
-
-/*mao ni sa grade level*/
-
-@media (max-width: 768px) {
-    .course-12 {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 10px;
-        gap: 30px;
-    }
-
-    .course-12 img {
-        width: 100%;
-    }
-
-    .con {
-        margin: 0px;
-
-    }
-
-    .course-12 p {
-        margin: 0px;
         padding: 10px;
-        font-size: 15px;
-    }
-    .subs{
-       text-align: center;
-    }
-}
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 30px;
 
-@media (max-width: 768px) {
-    .Inspiring img {
-        width: 70%;
+        h2 {
+            text-align: center;
+            font-size: 15px;
+            padding: 5px;
+            background-color: #e1eaff;
+            border-radius: 20px;
+            color: #e93d93;
+
+        }
+
+        p {
+            padding: 10px 20px 20px 10px;
+            text-indent: .5in;
+            text-align: justify;
+            margin: 10px;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
+        ul {
+            border-radius: 10px;
+            margin-top: 10px;
+            padding: 30px;
+            list-style-type: none;
+            font-size: 20px;
+            text-align: justify;
+        }
+
+
+        /*mao ni sa grade level*/
+
+
+        .course-12 {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 10px;
+            gap: 30px;
+        }
+
+        .course-12 img {
+            width: 100%;
+        }
+
+        .con {
+            margin: 0px;
+
+        }
+
+        .course-12 p {
+            margin: 0px;
+            padding: 10px;
+            font-size: 15px;
+        }
+
+
+        .Inspiring p {
+            column-count: 1;
+        }
+
+        .IS {
+            background: #182848;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .container3 {
+            width: 100%;
+            margin: 2px;
+
+
+        }
+
+        .about img {
+            width: 100%;
+            align-items: center;
+        }
+
+        .our {
+            width: 100%;
+        }
+
     }
 
-    .Inspiring p {
-        column-count: 1;
+    /*storiessss*/
+    .Inspiring {
+        p {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular';
+            text-indent: .5in;
+            text-align: justify;
+            column-count: 1;
+            margin: 0px;
+            padding: 5px;
+            box-shadow: 0 0 5px;
+            border-radius: 30px;
+            font-size: 18px;
+
+
+        }
+
+        .is-img img {
+            width: 100%;
+        }
+    }
+
+    .side img {
+        width: 80%;
+    }
+
+    .our p {
+        font-size: small;
+
+    }
+
+    .our .socials img {
+        width: 50px;
+    }
+
+    .our .email h4 {
+        font-size: x-small;
+    }
+
+    .tips-picture .yes a {
+        width: 100%;
     }
 }

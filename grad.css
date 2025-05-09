@@ -75,6 +75,7 @@
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
+    text-align: center;
 }
 
 .sub {
@@ -85,7 +86,11 @@
     font-size: 0.95rem;
     box-shadow: 0 0 10px;
 
+
     a {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
         text-decoration: none;
         color: black;
         transition: 2s;
@@ -170,7 +175,7 @@ table {
 
 /*IS*/
 .inspire-1 {
-    margin: 30px;
+    margin: 10px;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -196,7 +201,6 @@ table {
         text-indent: .5in;
         text-align: justify;
         column-count: 2;
-        columns-gap: 50px;
         margin: 20px;
         padding: 10px;
         box-shadow: 0 0 20px;
