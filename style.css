@@ -18,6 +18,7 @@ header {
     background-color: #7272f8;
     color: #000000;
     position: sticky;
+    top: 0;
 }
 
 .container {
@@ -25,7 +26,6 @@ header {
     align-items: center;
     justify-content: space-around;
     padding: 20px;
-    position: sticky;
 
     a {
         font-size: 20px;
