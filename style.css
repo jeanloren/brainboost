@@ -12,33 +12,19 @@ body {
     line-height: 1.6;
 }
 
+
 /*head*/
 header {
-
+    margin-top: 0px;
     background-color: #7272f8;
     color: #000000;
+    padding: 15px 0;
+    position: relative;
+    z-index: 1000;
+    align-items: center;
     position: sticky;
     top: 0;
-}
-
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 20px;
-
-    a {
-        font-size: 20px;
-    }
-}
-
-.link a,
-.logo a {
-    color: #000000;
-    font-size: 20px;
-    font-weight: bold;
-    float: left;
-    text-decoration: none;
+    width: 100%;
 }
 
 .banner {
@@ -46,21 +32,44 @@ header {
     background-image: url(images/blueblue.jpg);
 }
 
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    justify-content: center;
+/*tng words sa land*/
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
 }
 
-
-nav ul li a {
-    font-size: 16px;
-    color: #ffffff;
+.logo a {
+    color: #000000;
+    font-size: 1.8em;
+    font-weight: bold;
+    float: left;
     text-decoration: none;
 }
 
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+nav ul li a {
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
 
 header::after {
     content: "";
@@ -69,34 +78,32 @@ header::after {
 }
 
 .dropdown {
+    position: relative;
+    display: inline-block;
     cursor: pointer;
-    border-radius: 20px;
 }
 
 .dropdown-content {
-    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: none;
     position: absolute;
     background-color: #4f6d7a;
+    min-width: 160px;
     text-align: center;
-    padding: 0;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    padding-right: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     box-shadow: 0px 0px 10px #bdbdbd;
     justify-content: center;
-
-
+    align-items: center;
 }
 
 .dropdown-content a {
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
     color: #fff;
     text-decoration: none;
     display: block;
+
 }
 
 .dropdown:hover .dropdown-content {
@@ -113,16 +120,8 @@ header::after {
 }
 
 /*tong naay bnt*/
-.containert {
-    align-items: center;
-    justify-content: center;
-}
-
 .hero {
-    background-color: rgba(255, 239, 213, 0.514);
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    text-align: left;
     padding: 100px 20px;
     padding-bottom: 150px;
     color: #ffffff;
@@ -199,7 +198,7 @@ footer {
 }
 
 .container3 {
-    margin: 20px 30px 10px 30px;
+    margin: 10px 30px 10px 30px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -297,102 +296,4 @@ footer {
     color: white;
     padding: 2rem 0;
     text-align: center;
-
-    /*try and error*/
-    .study-tips {
-        flex-wrap: wrap;
-    }
-
-    .tips-grid {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .tip-card {
-        flex-wrap: wrap;
-        flex-direction: column;
-
-    }
-
-    .testimonials {
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
-    .test-grid {
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
-    .test-card {
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
-    .arti-tips {
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
-    .arti-grid {
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
-    .arti-card {
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
-    .Quote-tips {
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
-    .quote-grid {
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
-    .quote-card {
-        flex-wrap: wrap;
-        flex-direction: column;
-
-        img {
-            width: 80%;
-            height: 60%;
-        }
-    }
-
-    .vid-tips {
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
-    .vid-grid {
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
-    .vid-card {
-        flex-wrap: wrap;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .learn {
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
-    .learn-grid {
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
-    .learn-card {
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
 }
