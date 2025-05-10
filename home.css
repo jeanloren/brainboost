@@ -1,9 +1,5 @@
 /*study tip css kuno*/
 
-.containera {
-    text-align: center;
-    margin-top: 10px;
-}
 
 .study-tips {
     gap: 30px;
@@ -84,6 +80,9 @@
         border-radius: 50%;
 
     }
+
+
+
 
     button {
         margin-top: 15px;
@@ -275,6 +274,9 @@
     padding-bottom: 60px;
     border-radius: 5px;
     box-shadow: 0 0 10px pink;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 
     button {
         margin-top: 15px;
@@ -425,108 +427,107 @@
     padding: 10px;
     justify-content: center;
 
-}
+    .yes img {
+        width: 80%;
+        border-radius: 20px;
+    }
 
-.yes img {
-    width: 80%;
-    border-radius: 20px;
-}
+    .yes a img:hover {
+        width: 85%;
+    }
 
-.yes a img:hover {
-    width: 85%;
-}
+    .grade7 {
+        color: #ffffff;
+        background-color: #2c6fc1;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        font-size: xx-large;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
 
-.grade7 {
-    color: #ffffff;
-    background-color: #2c6fc1;
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-    font-size: xx-large;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.gr {
-    width: 100%;
-    padding: 10px;
-}
-
-.g7-pi {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    justify-content: space-between;
-    justify-content: center;
-    align-items: normal;
-}
-
-.grade a {
-    text-decoration: none;
-    padding: 10px;
-}
-
-.g7-quart {
-    width: 100%;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 30px;
-    align-items: center;
-    padding: 5px;
-    text-align: center;
-
-    h1 {
-        border-radius: 30px;
-        background-color: #213448;
-        font-size: 60px;
+    .gr {
         width: 100%;
         padding: 10px;
     }
 
-}
+    .g7-pi {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: space-between;
+        justify-content: center;
+        align-items: normal;
+    }
 
-.g7-quart a {
-    text-decoration: none;
-    color: #ffffff;
-}
+    .grade a {
+        text-decoration: none;
+        padding: 10px;
+    }
 
-.subject {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    width: 50%;
-    font-size: 60px;
-    text-align: center;
-    padding-top: 30px;
-    margin-top: 60px;
-}
+    .g7-quart {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+        align-items: center;
+        padding: 5px;
+        text-align: center;
 
-.sci {
-    position: absolute;
-    right: 65%;
-    width: 100%;
-    font-size: 60px;
-    text-align: right;
-    display: reverse;
-}
+        h1 {
+            border-radius: 30px;
+            background-color: #213448;
+            font-size: 60px;
+            width: 100%;
+            padding: 10px;
+        }
 
-.fil {
-    position: absolute;
-    width: 84%;
-    font-size: 60px;
-    text-align: right;
-    display: reverse;
-}
+    }
 
-.math {
-    position: absolute;
-    width: 95%;
-    font-size: 60px;
-    text-align: right;
-    display: reverse;
-}
+    .g7-quart a {
+        text-decoration: none;
+        color: #ffffff;
+    }
 
-.g7-quart img {
-    width: 80%;
-    border-radius: 30px;
+    .subject {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        width: 50%;
+        font-size: 60px;
+        text-align: center;
+        padding-top: 30px;
+        margin-top: 60px;
+    }
 
+    .sci {
+        position: absolute;
+        right: 65%;
+        width: 100%;
+        font-size: 60px;
+        text-align: right;
+        display: reverse;
+    }
+
+    .fil {
+        position: absolute;
+        width: 84%;
+        font-size: 60px;
+        text-align: right;
+        display: reverse;
+    }
+
+    .math {
+        position: absolute;
+        width: 95%;
+        font-size: 60px;
+        text-align: right;
+        display: reverse;
+    }
+
+    .g7-quart img {
+        width: 80%;
+        border-radius: 30px;
+
+    }
 }

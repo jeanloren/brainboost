@@ -1,59 +1,80 @@
 /*index*/
-@media (max-width:1024px) {
-    .container {
-        display: flex;
-        flex-wrap: wrap;
+@media (max-width: 992px) {
+    .container3 {
+        flex-direction: column;
+        padding: 20px;
     }
 
-    .container3 {
-        display: flex;
-        flex-wrap: wrap;
-
+    .container3 .our {
+        width: 100%;
+        margin: 10px 0;
     }
 }
 
 @media (max-width:768px) {
+    header {
+        justify-content: center;
+    }
 
-    .container a {
-        font-size: 18px;
+    .banner {
+        background-position: 100%;
+        background-image: url(images/blueblue.jpg);
+        background-color: #eeecec8f;
+    }
+
+    .hero h1 {
+        text-align: center;
+        font-size: 3em;
+        margin-bottom: 15px;
+        color: #000000;
+        background-color: #bdbdbd60;
+        border-radius: 10px;
+    }
+
+    .hero p {
+        text-align: center;
+        color: #000000;
+        font-size: 1.2em;
+        margin-bottom: 30px;
+        background-color: #ffffff86;
+        border-radius: 10px;
+        font-weight: 20px;
     }
 
     .container {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        box-shadow: none;
-        padding: 10px;
-    }
-
-    .logo a,
-    .link a {
-        color: #000000;
-        font-size: 20px;
-        font-weight: bold;
-        float: left;
-        text-decoration: none;
-        background: none;
-        box-shadow: none;
         justify-content: center;
-        align-items: center;
     }
 
-    nav .link {
+    .logo {
         align-items: center;
-        padding: 0;
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        padding-right: 20px;
+        float: center;
     }
 
     nav ul {
-        list-style: none;
-        display: flex;
-        gap: 10px;
-        justify-content: center;
-        padding: 0;
-        margin: 0;
+
+        text-align: center;
     }
 
-    /*home*/
+    nav ul li a {
+        font-size: small;
+        color: #fff;
+    }
+
+    nav ul li a:hover {
+        background-color: #ddd;
+    }
+
+}
+
+/*home*/
+@media (max-width: 768px) {
+
 
 
     .side {
@@ -82,10 +103,6 @@
 
     }
 
-    .containera {
-        justify-content: center;
-    }
-
     /*naa pud ni sa features*/
     /*topstudytips*/
 
@@ -101,8 +118,6 @@
     .tip-card {
         flex-wrap: wrap;
         flex-direction: column;
-
-
     }
 
     .testimonials {
@@ -130,24 +145,6 @@
         flex-direction: column;
     }
 
-    .arti-card button {
-        margin-top: 15px;
-        border: none;
-        box-shadow: 0 0 5px;
-
-        color: #fff;
-        padding: 5px;
-        border-radius: 5px;
-        font-weight: bold;
-        transition: background 0.3s ease;
-    }
-
-    button a {
-        font-size: small;
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-    }
-
     .arti-card {
         flex-wrap: wrap;
         flex-direction: column;
@@ -156,43 +153,21 @@
     .Quote-tips {
         flex-wrap: wrap;
         flex-direction: column;
-        justify-content: center;
-
     }
 
     .quote-grid {
         flex-wrap: wrap;
         flex-direction: column;
-        justify-content: center;
-    }
-
-    .quote-card img {
-        width: 100%;
-        height: 60%;
-    }
-
-    a {
-        margin-top: 15px;
-        border: none;
-        box-shadow: 0 0 5px;
-
-        color: #fff;
-        padding: 5px;
-        border-radius: 5px;
-        font-weight: bold;
-        transition: background 0.3s ease;
-    }
-
-    a .download {
-        font-size: smaller;
-        text-decoration: none;
-        color: rgb(255, 255, 255);
     }
 
     .quote-card {
         flex-wrap: wrap;
         flex-direction: column;
-        justify-content: center;
+
+        img {
+            width: 80%;
+            height: 60%;
+        }
     }
 
     .vid-tips {
@@ -224,187 +199,147 @@
     .learn-card {
         flex-wrap: wrap;
         flex-direction: column;
-    }
-
-
-    /*sa about, pomo,mind,acti,studytips*/
-
-    .about img {
-        width: 100%;
-    }
-
-    .about-section {
-        margin: 10px 10px 10px 10px;
-    }
-
-
-    .container3 h2 {
-        text-align: center;
-        font-size: 15px;
-        padding: 5px;
-
-        border-radius: 20px;
-        color: #e93d93;
-
-    }
-
-    p {
-        padding: 10px 20px 20px 10px;
-        text-indent: .5in;
-        text-align: justify;
-        margin: 10px;
-        font-size: 20px;
-        border-radius: 10px;
-    }
-
-    ul {
-        border-radius: 10px;
-        margin-top: 10px;
-        padding: 30px;
-        list-style-type: none;
-        font-size: 20px;
-        text-align: justify;
-    }
-
-
-    /*mao ni sa grade level*/
-
-    .courses {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
-    .course-12 {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        margin: 10px;
-        gap: 30px;
-    }
-
-    .course-12 img {
-        width: 100%;
-    }
-
-    .con {
-        margin: 0px;
-
-    }
-
-    .course-12 p {
-        margin: 0px;
-        padding: 10px;
-        font-size: 15px;
-    }
-
-
-    .Inspiring p {
-        column-count: 1;
-    }
-
-    .IS {
-        background: #182848;
-        color: white;
-        padding: 2rem 0;
-        text-align: center;
-    }
-
-    .container3 {
-        width: 100%;
-        margin: 2px;
-
-
-    }
-
-    .about img {
-        width: 100%;
-        align-items: center;
-    }
-
-    .our {
-        width: 100%;
-    }
-
-    .container3 {
-        margin: 0;
-        padding: 10px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        border-radius: 30px;
-    }
-
-    /*storiessss*/
-    .Inspiring p {
-        font-family: 'Lucida Sans', 'Lucida Sans Regular';
-        text-indent: .5in;
-        text-align: justify;
-        column-count: 1;
-        margin: 0px;
-        padding: 5px;
-        box-shadow: 0 0 5px;
-        border-radius: 30px;
-        font-size: 18px;
-
-
-    }
-
-    .is-img img {
-        width: 100%;
-    }
-
-    .Inspiring {}
-
-    .side img {
-        width: 80%;
-    }
-
-    .our p {
-        font-size: small;
-
-    }
-
-    .our .socials img {
-        width: 50px;
-    }
-
-    .our .email h4 {
-        font-size: x-small;
-    }
-
-    .tips-picture .yes a {
-        width: 100%;
     }
 }
 
-@media (max-width:480px) {
-    .container a {
-        font-size: 20px;
+
+
+/*sa about, pomo,mind,acti,studytips*/
+@media (max-width: 768px) {
+    .about img {
+        width: 100%;
     }
 
-    .container {
+    .about-section {
+        margin: 10px 10px 10px 10px;
+    }
+
+    .container3 {
+        margin: 0;
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    .link a {
-        color: #000000;
-        font-size: 15px;
-        font-weight: bold;
-        float: left;
-        text-decoration: none;
-    }
+    h2 {
+        font-size: 20px;
 
-    nav ul {
-        list-style: none;
+    }
+}
+
+/*mao ni sa grade level*/
+
+@media (max-width: 768px) {
+    .course-12 {
         display: flex;
-        gap: 15px;
+        flex-wrap: wrap;
+        margin: 10px;
+        gap: 30px;
+    }
+
+    .course-12 img {
+        width: 100%;
+    }
+
+    .con {
+        margin: 0px;
+
+    }
+
+    .course-12 p {
+        margin: 0px;
+        padding: 10px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Inspiring img {
+        width: 70%;
+    }
+
+    .Inspiring p {
+        column-count: 1;
+    }
+}
+
+/*index*/
+@media (max-width: 992px) {
+    .container3 {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .container3 .our {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width:768px) {
+    header {
         justify-content: center;
     }
 
-    /*home*/
+    .banner {
+        background-position: 100%;
+        background-image: url(images/blueblue.jpg);
+        background-color: #eeecec8f;
+    }
+
+    .hero h1 {
+        text-align: center;
+        font-size: 3em;
+        margin-bottom: 15px;
+        color: #000000;
+        -webkit-text-stroke: 1px #ffffff;
+        background-color: #bdbdbd60;
+        border-radius: 10px;
+    }
+
+    .hero p {
+        text-align: center;
+        color: #000000;
+        font-size: 1.2em;
+        margin-bottom: 30px;
+        background-color: #ffffff86;
+        border-radius: 10px;
+        font-weight: 20px;
+    }
+
+    .container {
+        justify-content: center;
+    }
+
+    .logo {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        padding-right: 20px;
+        float: center;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li a {
+        color: #fff;
+    }
+
+    nav ul li a:hover {
+        background-color: #ddd;
+    }
+
+}
+
+/*home*/
+@media (max-width: 768px) {
+
 
 
     .side {
@@ -415,7 +350,7 @@
         align-items: center;
         justify-content: center;
         gap: 20px;
-        flex-direction: column;
+        flex-direction: row;
 
     }
 
@@ -433,10 +368,6 @@
 
     }
 
-    .containera {
-        justify-content: center;
-    }
-
     /*naa pud ni sa features*/
     /*topstudytips*/
 
@@ -452,8 +383,6 @@
     .tip-card {
         flex-wrap: wrap;
         flex-direction: column;
-
-
     }
 
     .testimonials {
@@ -481,69 +410,30 @@
         flex-direction: column;
     }
 
-    .arti-card button {
-        margin-top: 15px;
-        border: none;
-        box-shadow: 0 0 5px;
-
-        color: #fff;
-        padding: 5px;
-        border-radius: 5px;
-        font-weight: bold;
-        transition: background 0.3s ease;
-    }
-
-    button a {
-        font-size: small;
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-    }
-
     .arti-card {
         flex-wrap: wrap;
         flex-direction: column;
+        justify-content: center;
     }
 
     .Quote-tips {
         flex-wrap: wrap;
         flex-direction: column;
-        justify-content: center;
-
     }
 
     .quote-grid {
         flex-wrap: wrap;
         flex-direction: column;
-        justify-content: center;
-    }
-
-    .quote-card img {
-        width: 100%;
-        height: 60%;
-    }
-
-    a {
-        margin-top: 15px;
-        border: none;
-        box-shadow: 0 0 5px;
-
-        color: #fff;
-        padding: 5px;
-        border-radius: 5px;
-        font-weight: bold;
-        transition: background 0.3s ease;
-    }
-
-    a .download {
-        font-size: smaller;
-        text-decoration: none;
-        color: rgb(255, 255, 255);
     }
 
     .quote-card {
         flex-wrap: wrap;
         flex-direction: column;
-        justify-content: center;
+
+        img {
+            width: 80%;
+            height: 60%;
+        }
     }
 
     .vid-tips {
@@ -576,10 +466,12 @@
         flex-wrap: wrap;
         flex-direction: column;
     }
+}
 
 
-    /*sa about, pomo,mind,acti,studytips*/
 
+/*sa about, pomo,mind,acti,studytips*/
+@media (max-width: 768px) {
     .about img {
         width: 100%;
     }
@@ -588,64 +480,28 @@
         margin: 10px 10px 10px 10px;
     }
 
-
-    .container3 h2 {
-        text-align: center;
-        font-size: 15px;
-        padding: 5px;
-
-        border-radius: 20px;
-        color: #e93d93;
-
-    }
-
-    p {
-        padding: 10px 20px 20px 10px;
-        text-indent: .5in;
-        text-align: justify;
-        margin: 10px;
-        font-size: 15px;
-        border-radius: 10px;
-    }
-
-    ul {
-        border-radius: 10px;
-        margin-top: 10px;
-        padding: 30px;
-        list-style-type: none;
-        font-size: 15px;
-        text-align: justify;
-    }
-
-    blockquote {
-        font-size: 15px;
-    }
-
-    /*mao ni sa grade level*/
-    .courses {
+    .container3 {
+        margin: 0;
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .course-11 {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+    h2 {
+        font-size: 20px;
 
+    }
+}
+
+/*mao ni sa grade level*/
+
+@media (max-width: 768px) {
     .course-12 {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: row;
         margin: 10px;
         gap: 30px;
-        justify-content: center;
-        align-items: center;
     }
 
     .course-12 img {
@@ -662,102 +518,14 @@
         padding: 10px;
         font-size: 15px;
     }
+}
 
+@media (max-width: 768px) {
+    .Inspiring img {
+        width: 70%;
+    }
 
     .Inspiring p {
         column-count: 1;
     }
-
-    .IS {
-        background: #182848;
-        color: white;
-        padding: 2rem 0;
-        text-align: center;
-    }
-
-    .container3 {
-        width: 100%;
-        margin: 2px;
-
-
-    }
-
-    .about img {
-        width: 100%;
-        align-items: center;
-    }
-
-    .our {
-        width: 100%;
-    }
-
-    .container3 {
-        margin: 0;
-        padding: 10px;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        border-radius: 30px;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    /*storiessss*/
-    .Inspiring p {
-        font-family: 'Lucida Sans', 'Lucida Sans Regular';
-        text-indent: .5in;
-        text-align: justify;
-        column-count: 1;
-        margin: 0px;
-        padding: 5px;
-        box-shadow: 0 0 5px;
-        border-radius: 30px;
-        font-size: 15px;
-
-
-    }
-
-    .is-img img {
-        width: 100%;
-    }
-
-    .Inspiring {}
-
-    .side img {
-        width: 80%;
-    }
-
-    .our p {
-        font-size: small;
-
-    }
-
-    .our .socials img {
-        width: 50px;
-    }
-
-    .our .email h4 {
-        font-size: x-small;
-    }
-
-    .tips-picture .yes a {
-        width: 100%;
-    }
-
-    .container3 p {
-        text-align: justify;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .container3 {
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        margin-right: 20px;
-        gap: 10px;
-        margin-bottom: 5px;
-        margin-left: 0px;
-    }
-
 }
